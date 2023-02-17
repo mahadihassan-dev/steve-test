@@ -57,12 +57,10 @@
     box-shadow: rgb(1 41 112 / 10%) 0px 15px 20px;
     background-color: #fff;
     margin-top: 105px;
-    margin-left: -100%;
+    margin-left: 0;
 }
 .sidebar-show {
     margin-left: 0;
-}
-.sidebar-hide {
 }
 .sidebar-wrapper {
     position: relative;
@@ -72,7 +70,7 @@ main.dashboard-wrapper {
     margin-top: 10px;
 }
 a.sidebar-btn {
-    display: block;
+    display: none;
     position: absolute;
     top: 50%;
     left: 280px;
