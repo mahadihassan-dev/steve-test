@@ -1,0 +1,114 @@
+/* 
+
+  custom grid : 1440px;
+
+*/
+
+/* Root CSS :: Start */
+:root {
+  --primary-btn-color: #0b75f1;
+  --primary-font-color: #0b75f1;
+  --primary-font-color-1: #141522;
+  --primary-font-family: 'Poppins', sans-serif !important;
+  --btn-border-radius: 10px;
+  --global-dash-font-1: #8D8D8D;
+  --border-property: 1px solid #0b75f1;
+  --global-dash-font: #9C9CA4;
+  --global-font-color: #000000;
+  --global-hover-color: #F0F7FE;
+  --global-bg-color: #F3F8FE;
+  --global-color-2: #FF4D5E;
+  --global-color-3: #48be69;
+  --global-color-4: #5cf186;
+  --global-color-5: #9c9ca430;
+  --dashboard-bg: #fafcff;
+}
+
+/* Root CSS :: End */
+
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background: var(--dashboard-bg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+
+/* Home page start  */
+
+.home-bg-top {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  left: 0px;
+  top: 0px;
+  background-color: #f0f7fe;
+  z-index: -1;
+}
+
+/* Home video  */
+.video-container {
+  margin: 183px auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+}
+
+#divi-video-container {
+  position: relative;
+  z-index: 1;
+}
+
+button.home-buy-button.show-button {
+  position: absolute;
+  bottom: 13%;
+  right: 2%;
+  transition: all 300ms;
+  font-weight: 500;
+  z-index: 2;
+}
+
+button {
+  background: #0b75f1;
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 13px 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.home-buy-button {
+  transform: translateY(100%);
+}
+
+.home-buy-button {
+  visibility: hidden;
+  transition: all 400ms ease !important;
+}
+
+.home-buy-button.show-button {
+  visibility: visible;
+  transform: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}

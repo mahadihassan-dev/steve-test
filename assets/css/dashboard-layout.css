@@ -1,0 +1,300 @@
+/* 
+
+    Dashboard layout CSS
+
+    
+    
+    */
+:root {
+    --primary-btn-color: #0b75f1;
+    --global-font-color: #000000;
+    --global-dash-font: #9C9CA4;
+    --global-dash-font-1: #8D8D8D;
+    --primary-font-color: #0b75f1;
+    --primary-font-color-1: #141522;
+    --primary-font-family: 'Poppins', sans-serif !important;
+    --btn-border-radius: 10px;
+    --border-property: 1px solid #0b75f1;
+    --global-hover-color: #F0F7FE;
+    --global-bg-color: #F3F8FE;
+    --dash-bg: #fafcff;
+    --global-color-2: #FF4D5E;
+}
+
+/* Dash - layout */
+.dash-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.dash-col-md-2 {
+    width: 13%;
+}
+.dash-col-md-5 {
+    width: 43.5%;
+}
+
+/* Sidebar :: Start */
+.dashboard-right {
+    position: relative;
+}
+.sidebar {
+    /* position: relative; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 265px;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: rgb(1 41 112 / 10%) 0px 15px 20px;
+    background-color: #fff;
+    margin-top: 105px;
+    margin-left: -100%;
+}
+.sidebar-show {
+    margin-left: 0;
+}
+.sidebar-hide {
+}
+.sidebar-wrapper {
+    position: relative;
+}
+main.dashboard-wrapper {
+    margin-left: 285px;
+    margin-top: 10px;
+}
+a.sidebar-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 280px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 4px;
+    color: #000;
+    z-index: 999999;
+    box-shadow: rgb(1 41 112 / 10%) 12px -2px 20px -7px;
+}
+.dash-logo {
+    text-align: center;
+}
+.siderbar-menu {
+    margin-top: 50px;
+}
+.siderbar-menu ul {
+    padding: 0;
+}
+ul.side-nav li {
+    margin: 5px 0px;
+}
+ul.side-nav li a {
+    padding: 10px 15px;
+    display: block;
+    background: #fff;
+    text-decoration: none;
+    color: var(--primary-font-color-1);
+    font-weight: 600;
+}
+ul.side-nav li a.active {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: var(--primary-font-color-1);
+    background-color: var(--global-hover-color);
+    border-radius: var(--btn-border-radius);
+    color: var(--primary-font-color);
+}
+ul.side-nav li a i {
+    margin-right: 10px;
+}
+ul.side-nav li a:hover {
+    background-color: var(--global-hover-color);
+    border-radius: var(--btn-border-radius);
+    color: var(--primary-font-color);
+}
+.sidebar-logout {
+    margin-top: 355px;
+}
+.sidebar-logout a.dash-logout {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 10px 15px;
+    background: #F5F5F7;
+    border-radius: var(--btn-border-radius);
+    font-weight: 500;
+    transition: all linear .3s;
+}
+.sidebar-logout a.dash-logout:hover {
+    background: var(--global-color-2);
+    color: var(--global-bg-color);
+}
+.sidebar-logout a.dash-logout i {
+    margin-right: 10px;
+}
+/* Sidebar :: End */
+
+/* Header :: Start */
+/* .dashboard-right {
+    margin-left: 265px;
+} */
+header.dash-header {
+    padding: 20px 20px;
+    box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+}
+.dash-header-col-left {
+    padding-left: 20px;
+}
+.dash-header-col-left p {
+    font-family: var(--primary-font-family);
+    margin: 0;
+    font-size: 16px ;
+    font-weight: 400 ;
+    color: var(--global-dash-font-1);
+}
+.dash-header-col-left h3 {
+    font-family: var(--primary-font-family);
+    margin: 6px 0px 0px 0px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.dash-header-col-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.header-notification span {
+    margin-right: 32px;
+}
+.header-notification span i {
+    font-size: 26px;
+    position: relative;
+}
+
+.header-notification span i::after {
+    position: absolute;
+    content: '';
+    top: 8px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--global-color-2);
+    border-radius: 50%;
+}
+
+.header-notification {
+    position: relative;
+}
+
+.notification-drawer {
+    position: absolute;
+    top: 80px;
+    left: -230px;
+    width: 315px;
+    background: #f2f2f2;
+    border-radius: 6px;
+    display: none;
+}
+
+.notification-drawer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.notification-drawer ul li a{
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: var(--primary-font-color-1);
+}
+.notification-drawer ul li {
+    /* border-bottom: .5px solid var(--global-dash-font); */
+    position: relative;
+}
+.notification-drawer ul li::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 13px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--global-color-3);
+    border: 0.5px solid var(--global-color-4);
+    transform: translate(-50%, -50%);
+}
+
+.notification-drawer ul li:nth-child(1n) {
+    border-bottom: .5px solid var(--global-color-5);
+}
+
+.notification-drawer ul li:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.notification-drawer ul li a:hover {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+.notification-drawer ul li a:hover {
+    color: var(--primary-font-color);
+}
+
+.header-user-avatar {
+    position: relative;
+}
+.header-user-opt {
+    position: absolute;
+    top: 88px;
+    left: -105px;
+    width: 170px;
+    background: var(--global-bg-color);
+    border-radius: 6px;
+    display: none;
+}
+.header-user-opt ul {
+    margin: 0;padding: 0;
+}
+.header-user-opt ul li:nth-child(1n) {
+    border-bottom: .5px solid var(--global-color-5);
+}
+
+.header-user-opt ul li:nth-last-child(1) {
+    border-bottom: none;
+}
+.header-user-opt ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+.header-user-avatar a.header-user {
+    display: block;
+    border-radius: 50% !important;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #5cf186, #48be69);
+    border-radius: 50px; 
+    border: 3px solid transparent; 
+    background: linear-gradient(45deg,#48be69,#f1db5c) border-box;
+}
+/* Header :: End */
