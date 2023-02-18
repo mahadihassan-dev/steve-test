@@ -62,9 +62,15 @@
     box-shadow: rgb(1 41 112 / 10%) 0px 15px 20px;
     background-color: #fff;
     /* margin-top: 105px; */
-    margin-left: 0;
+    margin-left: -100%;
 }
 
+.sidebar-hide {
+    margin-left: 100%;
+}
+.sidebar-show {
+    margin-left: 0;
+}
 .sidebar-wrapper {
     position: relative;
 }
@@ -74,8 +80,17 @@
 } */
 .dash-main-left-inner {
     position: relative;
+    background-color: red;
+}
+
+.dash-main-left-inner.show-left-inner{
     width: 265px;
 }
+
+.dash-main-left-inner.hide-left-inner{
+    width: 0px;
+}
+
 .sidebar-btn {
     display: block;
     position: absolute;
@@ -104,13 +119,17 @@
     left: 0;
     bottom: 0;
     z-index: 99;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .dash-main-right {
     width: 100%;
     height: auto;
     float: left;
     margin-top: 105px;
-    padding-left: 280px;
     padding-top: 10px;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -121,7 +140,17 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-a.sidebar-btn.opned {
+
+.dash-main-right.full-width{
+    padding-left: 280px;
+}
+
+.dash-main-left.showSidebar {
+    margin-left: -100%;
+}
+
+
+a.sidebar-btn .rotateBtn {
     right: -30px;
     transform: rotate(-180deg);
 }
