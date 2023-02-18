@@ -19,6 +19,12 @@
     .dash-header-col-left p {
         font-size: 12px;
     }
+    .dash-main-right {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 90px;
+        padding-left: 10px;}
     /* Dashboard Header :: End */
     /* Siderbar :: Start */
     a.sidebar-btn {

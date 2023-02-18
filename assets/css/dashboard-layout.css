@@ -196,7 +196,7 @@ header.dash-header {
     width: 100%;
     top: 0px;
     left: 0;
-    z-index: 99;
+    z-index: 99;background: #fff;
 }
 .dash-header-col-left {
     padding-left: 20px;
