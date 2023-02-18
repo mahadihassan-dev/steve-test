@@ -4,8 +4,31 @@
 /* For Smartphone */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     /* Dashboard Header :: Start */
-
+    .sidebar {
+        margin-left: -100%;
+    }
+    .siderbar-menu {
+        margin-top: 10px;
+      }
+    main.dashboard-wrapper {
+        margin-left: 10px;
+    }
+    .dash-header-col-left h3 {
+        font-size: 22px;
+    }
+    .dash-header-col-left p {
+        font-size: 12px;
+    }
     /* Dashboard Header :: End */
+    /* Siderbar :: Start */
+    a.sidebar-btn {
+        display: block !important;
+    }
+    .sidebar-show {
+        margin-left: 0;
+        margin-top: 96px;
+    }
+    /* Siderbar :: End */
 }
 
 /* For Small Size Tab */
