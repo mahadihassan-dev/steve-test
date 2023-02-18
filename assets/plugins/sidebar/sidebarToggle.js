@@ -41,10 +41,20 @@ $(document).ready(function () {
 			$(".dash-main-left-inner").addClass('show-left-inner');
 			$(".dash-main-left-inner").removeClass('hide-left-inner');
 		}
-		if($(".dash-main-left").hasClass('showSidebar')){
-			$(".sidebar-btn").style.transform = "rotate(-180deg) !important";
-			$(".sidebar-btn").style.right = "-30px !important";
+		// Test 
+		
+	});
+	$(".sidebar_show_btn").click(function () {
+		$(".dash-main-left").toggleClass('hideSidebar');
+		$(".dash-main-right ").toggleClass('full-width');
+		if($(".dash-main-left-inner").hasClass('hide-left-inner')){
+			$(".dash-main-left-inner").addClass('toggle-hide-left-inner');
+			$(".dash-main-left-inner").removeClass('show-left-inner');
+		}else{
+			$(".dash-main-left-inner").removeClass('hide-left-inner');
+			$(".dash-main-left-inner").addClass('toggle-left-inner');
 		}
+		
 	});
 });
 
