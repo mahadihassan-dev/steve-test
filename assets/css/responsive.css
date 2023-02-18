@@ -1,5 +1,20 @@
-/* 
+/* For Extra Small Device to 320px Device */
+@media only screen and (max-width: 319.5px) {}
 
-    Responsive Code Will Appear Here
+/* For Smartphone */
+@media only screen and (min-width: 320px) and (max-width: 479px) {}
 
-*/
+/* For Small Size Tab */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* For Big and Average Size Tab */
+@media only screen and (min-width: 768px) and (max-width: 979px) {}
+
+/* for Tab and Laptop Medium Size Screen */
+@media only screen and (min-width: 980px) and (max-width: 1023px) {}
+
+/* for Medium Size Laptop and Full Size Laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {}
+
+/* For Big Size Screen More than 1200px */
+@media only screen and (min-width: 1200px) {}

@@ -22,6 +22,11 @@
 }
 
 /* Dash - layout */
+/* .dash-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
 .dash-row {
     width: 100%;
     display: flex;
@@ -44,45 +49,81 @@
 }
 .sidebar {
     /* position: relative; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
     width: 265px;
     transition: all 0.3s;
-    padding: 20px;
+    padding: 22px 25px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
     box-shadow: rgb(1 41 112 / 10%) 0px 15px 20px;
     background-color: #fff;
-    margin-top: 105px;
+    /* margin-top: 105px; */
     margin-left: 0;
 }
 
 .sidebar-wrapper {
     position: relative;
 }
-main.dashboard-wrapper {
+/* main.dashboard-wrapper {
     margin-left: 285px;
     margin-top: 10px;
+} */
+.dash-main-left-inner {
+    position: relative;
+    width: 265px;
 }
-a.sidebar-btn {
-    display: none;
+.sidebar-btn {
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 280px;
+    bottom: 20%;
+    right: -15px;
     transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
-    background: #fff;
+    background: var(--primary-font-color);
     text-align: center;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     padding: 4px;
-    color: #000;
+    color: #fff;
     z-index: 999999;
     box-shadow: rgb(1 41 112 / 10%) 12px -2px 20px -7px;
+    -webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.dash-main-left {
+    position: fixed;
+    top: 105px;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.dash-main-right {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 105px;
+    padding-left: 280px;
+    padding-top: 10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a.sidebar-btn.opned {
+    right: -30px;
+    transform: rotate(-180deg);
 }
 .dash-logo {
     text-align: center;
@@ -151,6 +192,11 @@ ul.side-nav li a:hover {
 header.dash-header {
     padding: 20px 20px;
     box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 99;
 }
 .dash-header-col-left {
     padding-left: 20px;
