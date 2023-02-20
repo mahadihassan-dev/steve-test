@@ -36,7 +36,8 @@ $(document).ready(function () {
 		$(".dash-main-right ").toggleClass('full-width');
 		if($(".dash-main-left-inner").hasClass('show-left-inner')){
 			$(".dash-main-left-inner").removeClass('show-left-inner');
-			$(".dash-main-left-inner").addClass('hide-left-inner');
+			$(".dash-main-left-inner").removeClass('hide-left-inner');
+			$(".dash-main-left").removeClass('hide-left-inner');
 		}else{
 			$(".dash-main-left-inner").addClass('show-left-inner');
 			$(".dash-main-left-inner").removeClass('hide-left-inner');
@@ -48,7 +49,7 @@ $(document).ready(function () {
 		$(".dash-main-left").toggleClass('hideSidebar');
 		$(".dash-main-right ").toggleClass('full-width');
 		if($(".dash-main-left-inner").hasClass('hide-left-inner')){
-			$(".dash-main-left-inner").addClass('toggle-hide-left-inner');
+			$(".dash-main-left-inner").addClass('toggle-hide-left-inner'); 
 			$(".dash-main-left-inner").removeClass('show-left-inner');
 		}else{
 			$(".dash-main-left-inner").removeClass('hide-left-inner');
