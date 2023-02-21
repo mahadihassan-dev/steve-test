@@ -48,12 +48,6 @@
     position: relative;
 }
 .sidebar {
-    /* position: relative; */
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* bottom: 0; */
-    width: 265px;
     transition: all 0.3s;
     padding: 22px 25px;
     overflow-y: auto;
@@ -61,40 +55,34 @@
     scrollbar-color: #aab7cf transparent;
     box-shadow: rgb(1 41 112 / 10%) 0px 15px 20px;
     background-color: #fff;
-    /* margin-top: 105px; */
-    margin-left: -100%;
 }
 
-.sidebar-hide {
+/* .sidebar-hide {
     margin-left: 100%;
-}
+} */
+
 .sidebar-show {
     margin-left: 0;
 }
+
 .sidebar-wrapper {
     position: relative;
 }
-/* main.dashboard-wrapper {
-    margin-left: 285px;
-    margin-top: 10px;
-} */
+
 .dash-main-left-inner {
-    position: relative;
     background-color: red;
 }
 
-.dash-main-left-inner.show-left-inner{
-    width: 265px;
+.dash-main-left-inner .show-left-inner{
+    margin-left: -100%;
 }
 
-.dash-main-left-inner.hide-left-inner{
-    width: 0px;
+.dash-main-left-inner .hide-left-inner{
+    margin-left: -100%;
 }
-
-.dash-main-left-inner.toggle-hide-left-inner{
-    width: 265px;
+.dash-main-left.hideSidebar {
+    margin-left: -100% !important;
 }
-
 .sidebar-btn {
     display: block;
     position: absolute;
@@ -248,9 +236,7 @@ ul.side-nav li a:hover {
 /* Sidebar :: End */
 
 /* Header :: Start */
-/* .dashboard-right {
-    margin-left: 265px;
-} */
+
 header.dash-header {
     padding: 20px 20px;
     box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
