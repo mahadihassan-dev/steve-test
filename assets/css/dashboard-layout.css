@@ -49,7 +49,7 @@
 }
 .sidebar {
     transition: all 0.3s;
-    padding: 22px 25px;
+    padding: 0px 25px 75px 25px;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
@@ -67,10 +67,6 @@
 
 .sidebar-wrapper {
     position: relative;
-}
-
-.dash-main-left-inner {
-    background-color: red;
 }
 
 .dash-main-left-inner .show-left-inner{
@@ -111,7 +107,7 @@
 .sidebar_show_btn {
     display: block;
     position: fixed;
-    bottom: 20%;
+    bottom: 19.3%;
     left: 0;
     transform: rotate(-180deg);
     width: 30px;
@@ -160,7 +156,7 @@
 }
 
 .dash-main-right.full-width{
-    padding-left: 280px;
+    padding-left: 250px;
 }
 
 .dash-main-left.showSidebar {
@@ -386,5 +382,9 @@ header.dash-header {
     border-radius: 50px; 
     border: 3px solid transparent; 
     background: linear-gradient(45deg,#48be69,#f1db5c) border-box;
+}
+
+#respn-sidebarjs {
+    display: none;
 }
 /* Header :: End */

@@ -19,7 +19,7 @@ $(document).ready(function () {
         if ($(".dash-main-left-inner").hasClass('show-left-inner')) {
             $(".dash-main-left-inner").removeClass('show-left-inner');
         } else {
-            $(".dash-main-left-inner").hideClass('hide-left-inner');
+            $(".dash-main-left-inner").removeClass('hide-left-inner');
         }
     })
     
@@ -30,9 +30,11 @@ $(document).ready(function () {
         if ($(".dash-main-left-inner").hasClass('show-left-inner')) {
             $(".dash-main-left-inner").removeClass('show-left-inner');
         } else {
-            $(".dash-main-left-inner").hideClass('hide-left-inner');
+            $(".dash-main-left-inner").removeClass('hide-left-inner');
         }
     })
 
 });
+
+
 
